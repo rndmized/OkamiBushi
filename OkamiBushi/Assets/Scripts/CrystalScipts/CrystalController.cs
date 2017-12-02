@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,6 +25,11 @@ public class CrystalController : MonoBehaviour
             //Debug.Log("Current Health: " + stats.currentHealth);
         }
 
+    }
+
+    public CrystalStats GetStats()
+    {
+        return stats;
     }
 }
 
