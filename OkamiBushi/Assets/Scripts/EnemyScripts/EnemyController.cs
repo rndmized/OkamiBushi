@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyController : MonoBehaviour {
+public class EnemyController : MonoBehaviour
+{
 
     public float sightRadius = 10f;
 
@@ -19,8 +20,9 @@ public class EnemyController : MonoBehaviour {
     private bool block;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
 
         crystal = CrystalManager.instance.crystal.transform;
         agent = GetComponent<NavMeshAgent>();
@@ -28,40 +30,43 @@ public class EnemyController : MonoBehaviour {
         stats = GetComponent<EnemyStats>();
         anim = GetComponent<Animator>();
         rbody = GetComponent<Rigidbody>();
-        
+
         isHittable = true;
         isAttacking = false;
         alive = true;
 
     }
-	
-	// Update is called once per frame
-	void Update () {
-        
+
+    // Update is called once per frame
+    void Update()
+    {
+
         if (alive)
         {
             if (!GetBlockingState())
             {
                 SetTarget();
                 SetDestination();
-                
+
                 SetAction();
             }
         }
-	}
+    }
 
 
     void SetTarget()
     {
         float distance = Vector3.Distance(player.position, transform.position);
 
-        if (!PlayerManager.instance.player.GetComponent<AvatarController>().IsAlive())
+        if (!PlayerManager.instance.player.GetComponent<PlayerController>().IsAlive())
         {
             target = crystal;
+            agent.stoppingDistance = 2f;
         }
         if (distance <= sightRadius)
         {
             target = player;
+            agent.stoppingDistance = 2f;
         }
         else
         {
@@ -85,7 +90,7 @@ public class EnemyController : MonoBehaviour {
             {
                 //Attack Target
                 anim.Play("SwordAttack");
-                StartCoroutine(Attack(.5f,1.5f));
+                StartCoroutine(Attack(.5f, 1.5f));
                 BlockInput(1f);
             }
 
@@ -110,24 +115,26 @@ public class EnemyController : MonoBehaviour {
     {
         if (other.gameObject.name == "HitPoint")
         {
-            if(alive){
-                AvatarController pc = PlayerManager.instance.player.GetComponent<AvatarController>();
+            if (alive)
+            {
+                PlayerController pc = PlayerManager.instance.player.GetComponent<PlayerController>();
                 if (pc.AttackStatus() && isHittable)
                 {
-                    Debug.Log("Hit by Humongous Sword");
                     stats.TakeDamage(PlayerManager.instance.player.GetComponent<PlayerStats>().damage.getValue());
-                    if(stats.currentHealth > 0)
+                    if (stats.currentHealth > 0)
                     {
                         anim.Play("spin1", 0);
                         StartCoroutine(BlockInputCoroutine(1.5f));
-                    } else {
+                    }
+                    else
+                    {
                         anim.Play("Death", 0);
                         alive = false;
                     }
-                    
+
                 }
             }
-            
+
         }
     }
 
@@ -148,10 +155,8 @@ public class EnemyController : MonoBehaviour {
     {
         yield return new WaitForSeconds(startAttak);
         isAttacking = true;
-        Debug.Log(isAttacking);
         yield return new WaitForSeconds(finishAttack);
         isAttacking = false;
-        Debug.Log(isAttacking);
 
     }
 

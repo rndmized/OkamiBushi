@@ -9,5 +9,14 @@ public class EnemyStats : CharacterStats {
         base.Die();
         Animator anim = GetComponent<Animator>();
         anim.Play("Death", 0);
+        GameController.instance.countEnemy();
+        StartCoroutine(Despawn());
+
+    }
+
+    IEnumerator Despawn()
+    {
+        yield return new WaitForSeconds(10f);
+        Destroy(gameObject);
     }
 }
