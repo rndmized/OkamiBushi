@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 7}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -70,10 +70,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 681, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 681, y: 342}
+  m_MaxSize: {x: 12006, y: 8042}
   vertical: 0
-  controlID: 133
+  controlID: 11
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,14 +145,14 @@ MonoBehaviour:
     y: 609
     width: 1365
     height: 338
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 17}
   - {fileID: 22}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -237,10 +237,10 @@ MonoBehaviour:
     y: 0
     width: 1365
     height: 947
-  m_MinSize: {x: 404, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
+  m_MinSize: {x: 404, y: 342}
+  m_MaxSize: {x: 8004, y: 8042}
   vertical: 1
-  controlID: 134
+  controlID: 12
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 135
+  controlID: 13
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -290,7 +290,7 @@ MonoBehaviour:
     x: 407
     y: 92
     width: 956
-    height: 589
+    height: 588
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
@@ -460,19 +460,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/GameScripts
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/GameScripts
   m_LastFoldersGridSize: 96
   m_LastProjectPath: Y:\Unity Projects\OkamiBushiGit\OkamiBushi\OkamiBushi
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 24}
-    m_SelectedIDs: 1e3f0000
-    m_LastClickedID: 16158
-    m_ExpandedIDs: 00000000d834000008350000b8360000d238000020390000703b0000143e0000a2400000ffffff7f
+    scrollPos: {x: 0, y: 136}
+    m_SelectedIDs: 802c0000
+    m_LastClickedID: 11392
+    m_ExpandedIDs: 00000000842b0000b42b0000662d0000802f0000ce2f0000dc30000020320000a8340000b43500002e370000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -500,7 +500,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d834000008350000b8360000e8370000d2380000203900002c3a0000703b000052400000a2400000
+    m_ExpandedIDs: 00000000842b0000b42b0000662d0000802f0000ce2f000020320000a83400002e370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -582,7 +582,7 @@ MonoBehaviour:
     width: 553
     height: 926
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 242.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 308
@@ -618,9 +618,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a060000
-    m_LastClickedID: 0
-    m_ExpandedIDs: ac00f5ff325cf5fffc6bf5ff1a71f5ff4872f5ffb67af5ff9c7ff5ff7ce9f5ffd6edf5ffd408f6ff9a0bf6ff3200f7ff080df7ffe232f7ffb037f9ff18a2f9ff6aa9f9ffde34fcff3839fcff3eebfdffa6ecfdffb6ecfdffc0ecfdffceecfdffd0ecfdffe6ecfdff2cedfdff36edfdff3aedfdff3eedfdff6cedfdff80eefdff9ef3fdff7496feffc87fffff8080ffff2683ffffeaecffff00000000e086000078b000009cb00000a6b00000b8b0000036080200860802002a94020068950200da960200f296020072120300c2120300701303007a1303008a2d03006c2e0300fc2e0300142f0300
+    m_SelectedIDs: 484bfbff
+    m_LastClickedID: -308408
+    m_ExpandedIDs: d4b9f9ff3095fdffe409feff241bfeff6c30feff3e2ffffff033ffff6448ffff9454ffff9a54ffff4c59ffff36e4ffff92e9ffffb6f0ffff96fbffff000000008a520000a45200000477000020770000728d00008c8d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -639,7 +639,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
   m_ExpandedScenes:
-  - Scene1-Playground
+  - ScoreScene
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -672,13 +672,13 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
   lastFramingTime: 9225.438660112324
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.512499, y: 10.552129, z: 19.391462}
+    m_Target: {x: 514.0918, y: 279.5129, z: 12.601661}
     speed: 2
-    m_Value: {x: -4.512499, y: 10.552129, z: 19.391462}
+    m_Value: {x: 514.0918, y: 279.5129, z: 12.601661}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -694,27 +694,27 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 1
-      speed: 2
-      m_Value: 1
-    zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
+    zGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
   m_Rotation:
-    m_Target: {x: 0.33813122, y: 0.15320203, z: -0.05589097, w: 0.9268631}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0.3381308, y: 0.15320185, z: -0.055890903, w: 0.92686194}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 11.323739
+    m_Target: 684.74243
     speed: 2
-    m_Value: 11.323739
+    m_Value: 684.74243
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: 0.18300885, y: 0.791376, z: -0.5092702, w: 0.28438663}
+  m_LastSceneViewRotation: {x: -0.33813122, y: -0.15320201, z: 0.055890966, w: -0.9268631}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 

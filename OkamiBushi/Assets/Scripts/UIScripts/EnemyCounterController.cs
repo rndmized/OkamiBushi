@@ -11,7 +11,7 @@ public class EnemyCounterController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        enemyCounter.text = GameController.instance.getEnemyKillCount().ToString();
-		
+        //enemyCounter.text = GameController.instance.getEnemyKillCount().ToString();
+        enemyCounter.text = ScoreController.score.ToString();
 	}
 }

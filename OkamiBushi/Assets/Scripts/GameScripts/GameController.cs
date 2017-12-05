@@ -40,6 +40,8 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        ScoreController.score = getEnemyKillCount();
+
 		if ((PlayerManager.instance.player.GetComponent<PlayerController>().GetStats().currentHealth <= 0) || CrystalManager.instance.crystal.GetComponent<CrystalController>().GetStats().currentHealth <= 0)
         {
             gameOver.SetActive(true);
