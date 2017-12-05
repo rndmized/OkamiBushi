@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Sword
   - GameOver
+  - DefaultButton
   layers:
   - Default
   - TransparentFX

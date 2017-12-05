@@ -13,8 +13,8 @@ public class Spawner : MonoBehaviour {
 
     private void Start()
     {
-        //stop = false;
-        //StartCoroutine(Spawn());
+        stop = false;
+        StartCoroutine(Spawn());
         
     }
 
@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour {
         {
             Instantiate(enemy,transform.TransformPoint(0,0,0), gameObject.transform.rotation);
             yield return new WaitForSeconds(spawnTimes);
-            stop = true;
+            //stop = true;
         }
     }
 

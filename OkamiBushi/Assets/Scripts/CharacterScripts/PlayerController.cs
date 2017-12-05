@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-
+    GameObject menu;
     Quaternion targetRotation;
     Transform cam, character;
     Animator anim;
@@ -45,10 +45,12 @@ public class PlayerController : MonoBehaviour
         player = character.GetComponent<CharacterController>();
         stats = GetComponent<PlayerStats>();
         trailsFX = GameObject.Find("Trails");
+        menu = GameObject.Find("PauseMenu");
+
+        menu.SetActive(false);
         isHittable = true;
         alive = true;
         block = false;
-        //Testing dash
         currentDashTime = maxDashTime;
         trailsFX.SetActive(false);
     }
@@ -174,6 +176,17 @@ public class PlayerController : MonoBehaviour
                 anim.Play("Horizontal Slash", 0);
                 StartCoroutine(Attack(.3f, .95f));
                 BlockInput(1.5f);
+            }
+
+            if (Input.GetButtonDown("Start"))
+            {
+                Debug.Log("Pause");
+                if (Time.timeScale > 0)
+                {
+                    menu.SetActive(true);
+                    Time.timeScale = 0;
+                    
+                }     
             }
         }
 
