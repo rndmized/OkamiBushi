@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Base Stats class for damage and armor. It is designed to hold modifiers however it is not really used as such yet. */
 [System.Serializable]
 public class Stat {
 

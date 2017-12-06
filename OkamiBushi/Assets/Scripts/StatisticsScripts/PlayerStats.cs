@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class PlayerStats : CharacterStats {
 
+    // Override die method
     public override void Die()
     {
         base.Die();
-        //play death animation - destroy gameobject - drop booster
-        //Destroy(gameObject);
         Animator anim = GetComponent<Animator>();
         anim.Play("Death", 0);
     }

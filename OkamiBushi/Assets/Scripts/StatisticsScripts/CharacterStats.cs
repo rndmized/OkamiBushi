@@ -15,11 +15,12 @@ public class CharacterStats : MonoBehaviour {
     {
         currentHealth = maxHealth;
     }
-
+    // Character takes an amount of damage
     public void TakeDamage(int damage)
     {
-
+        //Apply modifiers if applicable.
         damage -= armor.getValue();
+        // Limit to values in between 0 and max health.
         damage = Mathf.Clamp(damage,0,maxHealth);
         currentHealth -= damage;
 
@@ -29,7 +30,8 @@ public class CharacterStats : MonoBehaviour {
         }
 
     }
-
+    
+    // Will be overriden
     public virtual void Die()
     {
         //Insert death method here
