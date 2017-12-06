@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+// Basic enemy AI controller
 public class EnemyController : MonoBehaviour
 {
-
+    
     public float sightRadius = 10f;
 
     Transform target, crystal, player;
@@ -53,7 +54,7 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-
+    // If player is not in sight distance swith target to crystal
     void SetTarget()
     {
         float distance = Vector3.Distance(player.position, transform.position);
@@ -74,6 +75,7 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    // Set destination to target
     void SetDestination()
     {
         FaceTarget(target);
@@ -81,6 +83,7 @@ public class EnemyController : MonoBehaviour
         agent.SetDestination(tempPosition);
     }
 
+    //  Detect distance to target and attack if proceeds
     void SetAction()
     {
         float distance = Vector3.Distance(target.position, transform.position);
@@ -91,13 +94,14 @@ public class EnemyController : MonoBehaviour
                 //Attack Target
                 anim.Play("SwordAttack");
                 StartCoroutine(Attack(.5f, 1.5f));
-                BlockInput(1f);
+                BlockInput(1.5f);
             }
 
         }
 
     }
 
+    // Face model to target direction
     void FaceTarget(Transform target)
     {
         Vector3 direction = (target.position - transform.position).normalized;
@@ -105,12 +109,14 @@ public class EnemyController : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
 
+    // Display radius in Unity Editor
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, sightRadius);
     }
 
+    //If hit by HitPoint (Component on the player's sword) take damage.
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "HitPoint")
@@ -121,6 +127,7 @@ public class EnemyController : MonoBehaviour
                 if (pc.AttackStatus() && isHittable)
                 {
                     stats.TakeDamage(PlayerManager.instance.player.GetComponent<PlayerStats>().damage.getValue());
+                    // If it is still alive play spin animation else die and play death animation
                     if (stats.currentHealth > 0)
                     {
                         anim.Play("spin1", 0);
@@ -137,12 +144,13 @@ public class EnemyController : MonoBehaviour
 
         }
     }
-
+    // Returns attacking status of enemy
     public bool AttackStatus()
     {
         return isAttacking;
     }
 
+    // Enemy becomes invincible for 1 second
     IEnumerator InvincibilityFrames()
     {
         isHittable = false;
@@ -150,7 +158,7 @@ public class EnemyController : MonoBehaviour
         isHittable = true;
 
     }
-
+    // Attack  co -routine
     IEnumerator Attack(float startAttak, float finishAttack)
     {
         yield return new WaitForSeconds(startAttak);
@@ -159,14 +167,6 @@ public class EnemyController : MonoBehaviour
         isAttacking = false;
 
     }
-
-    IEnumerator BlockInputCoroutine(float time)
-    {
-        block = true;
-        yield return new WaitForSeconds(time);
-        block = false;
-    }
-
 
     //BlockingFunctionality
 
@@ -178,6 +178,14 @@ public class EnemyController : MonoBehaviour
     public void BlockInput(float time)
     {
         StartCoroutine(BlockInputCoroutine(time));
+    }
+
+    
+    IEnumerator BlockInputCoroutine(float time)
+    {
+        block = true;
+        yield return new WaitForSeconds(time);
+        block = false;
     }
 
 }
