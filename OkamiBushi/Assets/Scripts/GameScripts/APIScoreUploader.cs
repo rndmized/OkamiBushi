@@ -27,23 +27,16 @@ public class APIScoreUploader : MonoBehaviour
 
     IEnumerator Upload()
     {
-        List<IMultipartFormSection> formData = new List<IMultipartFormSection>();
-        formData.Add(new MultipartFormDataSection("score=" + ScoreController.score));
-        formData.Add(new MultipartFormDataSection("name=" + username));
-
-        //UnityWebRequest www = UnityWebRequest.Post("http://rndmized.pythonanywhere.com/score", "string");
-
-        var json = JsonUtility.ToJson(score);
-        Debug.Log(json);
-
+        // Create appropriate structure to send scores over the network
         Dictionary<string, string> formFields = new Dictionary<string, string>();
         formFields.Add("playerName", score.playerName);
         formFields.Add("score", score.score.ToString());
-
+        // Create http post request
         UnityWebRequest www = UnityWebRequest.Post("http://rndmized.pythonanywhere.com/score", formFields);
 
+        // Await for response
         yield return www.SendWebRequest();
-
+        // Log error, if no error return to main menu.
         if (www.isNetworkError || www.isHttpError)
         {
             Debug.Log(www.error);
@@ -52,12 +45,13 @@ public class APIScoreUploader : MonoBehaviour
         {
             Debug.Log(www.downloadHandler.text);
             Debug.Log("Form upload complete!");
-            //SceneManager.LoadScene("TitleScreenScene");
+            SceneManager.LoadScene("TitleScreenScene");
         }
     }
 
 }
 
+// Inner class to send over the networ with score values.
 [Serializable]
 public class Score
 {
