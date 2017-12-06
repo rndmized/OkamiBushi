@@ -6,21 +6,27 @@ public class PlayerController : MonoBehaviour
 {
 
     public Transform sword;
+    
+    // Movement Variables
     public float speed = 3f;
     public float turnSpeed = 10f;
 
-
+    // Jump Variables
     public float jumpDist = 3.0f;
     float verticalVelocity;
     public float gravity = 20f;
+    
+    // Input
     private Vector2 input;
     private float angle;
+    
+    // Checking variables
     private bool isAttacking;
     private bool isHittable;
     private bool alive;
     private bool block;
 
-    //Testing Dash
+    //Dash Variables
     public float maxDashTime = 1.0f;
     public float dashSpeed = 8.0f;
     public float dashStoppingSpeed = 0.1f;
@@ -28,7 +34,7 @@ public class PlayerController : MonoBehaviour
     private float currentDashTime;
 
 
-
+    // Game Objects References
     GameObject menu;
     Quaternion targetRotation;
     Transform cam, character;
@@ -37,8 +43,10 @@ public class PlayerController : MonoBehaviour
     PlayerStats stats;
     GameObject trailsFX;
 
+    /* Initializing values and getting references */
     void Start()
     {
+        // Setting References
         cam = Camera.main.transform;
         anim = GetComponent<Animator>();
         character = GetComponent<Transform>();
@@ -47,34 +55,44 @@ public class PlayerController : MonoBehaviour
         trailsFX = GameObject.Find("Trails");
         menu = GameObject.Find("PauseMenu");
 
+        // Hide menu
         menu.SetActive(false);
+
+        // Set default values
         isHittable = true;
         alive = true;
         block = false;
         currentDashTime = maxDashTime;
+
+        // Hide dash particles
         trailsFX.SetActive(false);
     }
 
+    // Returns Player's stats intance.
     public PlayerStats GetStats()
     {
         return stats;
     }
 
+    // Return attacking status of the player.
     public bool AttackStatus()
     {
         return isAttacking;
     }
 
+    // Returns whether the player is hittable or not. (Game mechanic)
     public bool HittableStatus()
     {
         return isHittable;
     }
 
+    // Returns whether the player is alive or not.
     public bool IsAlive()
     {
         return alive;
     }
 
+    // Strats invincibility co - routine.
     void Hit()
     {
         StartCoroutine(InvincibilityFrames());
@@ -82,15 +100,17 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // Only allow player to act if it is alive
         if (alive)
         {
-
+            // Check whether it can move or not due to previous action
             if (!GetBlockingState())
             {
                 GetInput();
                 Animate();
                 Move();
             }
+            // Apply Gravity to player
             ApplyGravity();
 
         }
@@ -99,10 +119,12 @@ public class PlayerController : MonoBehaviour
 
     private void ApplyGravity()
     {
-
+        /* Is grounded returns whether the player is in contact with the ground or not. */
         if (player.isGrounded == true)
-        {
+        {   
+            // Push player downwards
             verticalVelocity = -gravity * Time.deltaTime;
+            // Allow jumping when pressing Y on the gamepad (xbox)
             if (Input.GetButtonDown("Y"))
             {
                 verticalVelocity = jumpDist;
@@ -110,6 +132,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            // Push player towards the ground
             verticalVelocity -= gravity * Time.deltaTime;
         }
     }
@@ -123,8 +146,10 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    /* Takes user input and execute actions accordingly */
     void GetInput()
     {
+        // Don't allow user to move while attacking
         if (!isAttacking)
         {
             input.x = Input.GetAxis("Horizontal");
@@ -189,14 +214,9 @@ public class PlayerController : MonoBehaviour
                 }     
             }
         }
-
-
-
-
-
-
     }
 
+    // Calculate angle in which the player should face to.
     void CalculateDirection()
     {
         angle = Mathf.Atan2(input.x, input.y);
@@ -204,13 +224,15 @@ public class PlayerController : MonoBehaviour
         angle += cam.eulerAngles.y;
 
     }
-
+    
+    // rotate Y axis player to face correct direction.
     void Rotate()
     {
         targetRotation = Quaternion.Euler(0, angle, 0);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, turnSpeed * Time.deltaTime);
     }
 
+    /* Move player's character based on input */
     private void Move()
     {
         Vector3 movement = new Vector3(0, verticalVelocity * Time.deltaTime, 0);
@@ -218,29 +240,31 @@ public class PlayerController : MonoBehaviour
         {
             //Claculate direction to face to.
             CalculateDirection();
-            //Rotate transform
+            //Rotate transform.
             Rotate();
+            // Move character forward in the given direction.
             movement += transform.forward * speed * Time.deltaTime;
         }
+        // Tell character controller component to move
         player.Move(movement);
 
     }
 
-    private void SeatheSword()
-    {
-        sword.gameObject.SetActive(!sword.gameObject.activeSelf);
-    }
-
+    /* On collision trigger (if player gets collided by something) */
     private void OnTriggerEnter(Collider other)
     {
+        // Check if the player is still alive
         if (alive)
         {
+            // If the colliding object is an enemy sword
             if (other.gameObject.name == "EnemySword")
             {
+                // Check if character is hittable
                 if (HittableStatus())
                 {
-                    Debug.Log("Hit!!");
+                    //Character takes damage
                     stats.TakeDamage(15);
+                    // If player dies, change alive value.
                     if (stats.currentHealth <= 0)
                     {
                         alive = false;
@@ -249,20 +273,19 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-
     }
 
+    /* Attacking coroutine will set the attack time to a given time to match animation. */
     IEnumerator Attack(float startAttak, float finishAttack)
     {
         yield return new WaitForSeconds(startAttak);
         isAttacking = true;
-        Debug.Log(isAttacking);
         yield return new WaitForSeconds(finishAttack);
         isAttacking = false;
-        Debug.Log(isAttacking);
 
     }
 
+    /* Turn the character invincible for 1 second */
     IEnumerator InvincibilityFrames()
     {
         isHittable = false;
@@ -277,7 +300,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(time);
         block = false;
     }
-
+    /* Dashing Co - routine */
     IEnumerator Dash(bool dashing)
     {
         Vector3 movement = new Vector3(0, verticalVelocity * Time.deltaTime, 0);
