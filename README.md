@@ -33,7 +33,7 @@ The leaderboard can be accessed [here](http://rndmized.pythonanywhere.com/)
 Even though the game is designed to be played with a controller (xbox360), keyboard and mouse can be used too. The following are the mappings for both keyboard/mouse and controller:
 
 <p align="center">
-<img src="https://github.com/rndmized/OkamiBushi/blob/master/docs/Assets/OkamiBushiControllerMap.PNG" width="500">
+<img src="https://github.com/rndmized/OkamiBushi/blob/master/docs/Assets/OkamiBushiControllerMap.png" width="500">
 </p>
 
 
