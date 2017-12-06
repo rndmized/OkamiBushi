@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/* Displays score on the UI */
 public class EnemyCounterController : MonoBehaviour {
 
     public Text enemyCounter;
    
-	
 	// Update is called once per frame
 	void Update () {
-
-        //enemyCounter.text = GameController.instance.getEnemyKillCount().ToString();
         enemyCounter.text = ScoreController.score.ToString();
 	}
 }
