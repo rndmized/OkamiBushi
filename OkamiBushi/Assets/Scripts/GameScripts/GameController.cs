@@ -15,6 +15,7 @@ public class GameController : MonoBehaviour {
         instance = this;
     }
 
+    // Initialise values
     void Start()
     {
         Time.timeScale = 1;
@@ -24,12 +25,13 @@ public class GameController : MonoBehaviour {
 
     }
 
-
+    // Increments enemy count.
     public void countEnemy()
     {
         enemyCount++;
     }
 
+    // return score value of enemy count.
     public int getEnemyKillCount()
     {
         return enemyCount*175;
@@ -39,9 +41,9 @@ public class GameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        // Udate score controller
         ScoreController.score = getEnemyKillCount();
-
+        // Detect if defeat conditions are met to finish the game
 		if ((PlayerManager.instance.player.GetComponent<PlayerController>().GetStats().currentHealth <= 0) || CrystalManager.instance.crystal.GetComponent<CrystalController>().GetStats().currentHealth <= 0)
         {
             gameOver.SetActive(true);
@@ -50,7 +52,7 @@ public class GameController : MonoBehaviour {
         }
 	}
 
-
+    // Display Game Over Overlay, wait for 1 in-game second (5 seconds in real-time) and navigate to Score scene.
     IEnumerator GameOver()
     {
         yield return new WaitForSeconds(1);
