@@ -18,11 +18,10 @@ public class CrystalController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Colliding with: " + other.gameObject.name);
+        /* Detect if the crystal is being hit by an enemy sword. */
         if (other.gameObject.name == "EnemySword")
         {
             stats.TakeDamage(15);
-            //Debug.Log("Current Health: " + stats.currentHealth);
         }
 
     }
