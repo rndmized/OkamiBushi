@@ -23,8 +23,8 @@ horde of monsters that want to destroy it by killing them before they break it. 
 crystal as primary target but will be attracted by the player if he is in range. Every enemy killed will add to the score. If the crystal is destroyed or the player dies the game will be over and th player will have the chance to upload his score along with his nickname to the leaderboard!
 
 <img src="https://github.com/rndmized/OkamiBushi/blob/master/docs/Assets/CaptureMain.PNG" width="350">
-<src="https://github.com/rndmized/OkamiBushi/blob/master/docs/Assets/Capture.PNG" width="350">
-<src="https://github.com/rndmized/OkamiBushi/blob/master/docs/Assets/CaptureScore.PNG" width="350">
+<img src="https://github.com/rndmized/OkamiBushi/blob/master/docs/Assets/Capture.PNG" width="350">
+<img src="https://github.com/rndmized/OkamiBushi/blob/master/docs/Assets/CaptureScore.PNG" width="350">
 </p>
 
 The leaderboard can be accessed [here](http://rndmized.pythonanywhere.com/)
