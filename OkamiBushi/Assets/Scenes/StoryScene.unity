@@ -408,27 +408,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nibh
-    neque, convallis vitae gravida a, bibendum et purus. Curabitur vel facilisis felis.
-    Sed blandit purus odio, ac auctor turpis egestas a. Suspendisse suscipit ex sed
-    mi sollicitudin, eleifend luctus neque molestie. Nullam iaculis odio ornare lacinia
-    laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean
-    lacinia ante sed sapien egestas condimentum. Nullam facilisis, dolor non ornare
-    pellentesque, mi erat pharetra orci, in convallis eros odio vel nunc. Sed tortor
-    sem, molestie a erat nec, tempus tempus nisi. Maecenas sit amet faucibus neque,
-    eleifend egestas ante. Vestibulum laoreet tellus tortor, non ultricies ligula
-    rutrum sit amet. Curabitur eget lacinia libero. Nam tincidunt nibh eros, consequat
-    sodales turpis malesuada sit amet. In dui lectus, blandit vel sodales at, venenatis
-    quis massa. Cras quis viverra nibh.\r\n\r\nEtiam scelerisque aliquam ultrices.
-    Mauris metus augue, porta ac lectus ut, faucibus fringilla felis. Aenean at eleifend
-    diam, at dignissim augue. Maecenas suscipit, turpis sit amet pharetra pellentesque,
-    nunc erat consequat ipsum, nec tincidunt tellus lectus quis tellus. Donec iaculis
-    nunc et lacus ultrices convallis. Mauris posuere, ipsum sit amet imperdiet pretium,
-    eros tellus mattis tellus, eget eleifend nibh lacus non tellus. Lorem ipsum dolor
-    sit amet, consectetur adipiscing elit. Curabitur molestie turpis justo, sit amet
-    lacinia mi sagittis vel. Etiam tincidunt faucibus quam ac elementum. Quisque ac
-    erat lorem. Nam ut purus erat. Curabitur nec lectus leo. Curabitur tincidunt non
-    est eu blandit. Integer non accumsan nibh. In eu luctus nunc, sed rutrum augue."
+  m_Text: "Okami Bushi, the Last Warrior is the only thing that stands in the way
+    of the hordes of evil that seek to destroy the magic crystal that gives live to
+    the underground temple village of Hakkuri. \nIs your duty, as the lone warrior
+    of the Okami Clan to defend it until your lasth breath!"
 --- !u!222 &734568499
 CanvasRenderer:
   m_ObjectHideFlags: 0

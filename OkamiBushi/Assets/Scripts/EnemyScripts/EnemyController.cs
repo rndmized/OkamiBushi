@@ -130,11 +130,13 @@ public class EnemyController : MonoBehaviour
                     // If it is still alive play spin animation else die and play death animation
                     if (stats.currentHealth > 0)
                     {
+                        isAttacking = false;
                         anim.Play("spin1", 0);
                         StartCoroutine(BlockInputCoroutine(1.5f));
                     }
                     else
                     {
+                        isAttacking = false;
                         anim.Play("Death", 0);
                         alive = false;
                     }

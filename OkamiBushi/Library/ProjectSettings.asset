@@ -11,9 +11,9 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Dullahan Studios
   productName: OkamiBushi
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: 10095b621bbf83e4ea6387330de03c1f, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -256,7 +256,14 @@ PlayerSettings:
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 10095b621bbf83e4ea6387330de03c1f, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
   m_BuildTargetVRSettings: []
@@ -565,15 +572,23 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: OkamiBushi
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
   metroCertificateNotAfter: 00ac23186a8cd401
   metroApplicationDescription: OkamiBushi
-  wsaImages: {}
-  metroTileShortName: 
+  wsaImages:
+    65636: Assets/GFX/2D Graphics/Images/Icon/icon50.jpg
+    65661: Assets/GFX/2D Graphics/Images/Icon/icon63.jpg
+    65676: Assets/GFX/2D Graphics/Images/Icon/icon70.jpg
+    65686: Assets/GFX/2D Graphics/Images/Icon/icon75.jpg
+    65716: Assets/GFX/2D Graphics/Images/Icon/icon90.jpg
+    65736: Assets/GFX/2D Graphics/Images/Icon/icon100.jpg
+    65776: Assets/GFX/2D Graphics/Images/Icon/icon120.jpg
+    65936: Assets/GFX/2D Graphics/Images/Icon/icon200.jpg
+  metroTileShortName: OkamiBushi
   metroCommandLineArgsFile: 
   metroTileShowName: 0
   metroMediumTileShowName: 0
@@ -585,7 +600,33 @@ PlayerSettings:
   metroSplashScreenBackgroundColor: {r: 0.12941177, g: 0.17254902, b: 0.21568628,
     a: 1}
   metroSplashScreenUseBackgroundColor: 0
-  platformCapabilities: {}
+  platformCapabilities:
+    WindowsStoreApps:
+      AllJoyn: False
+      BlockedChatMessages: False
+      Bluetooth: False
+      Chat: False
+      CodeGeneration: False
+      EnterpriseAuthentication: False
+      HumanInterfaceDevice: True
+      InputInjectionBrokered: False
+      InternetClient: True
+      InternetClientServer: False
+      Location: False
+      Microphone: False
+      MusicLibrary: False
+      Objects3D: False
+      PhoneCall: False
+      PicturesLibrary: False
+      PrivateNetworkClientServer: False
+      Proximity: False
+      RemovableStorage: False
+      SharedUserCertificates: False
+      SpatialPerception: False
+      UserAccountInformation: False
+      VideosLibrary: False
+      VoipCall: False
+      WebCam: False
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 

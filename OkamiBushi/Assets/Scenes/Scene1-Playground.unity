@@ -202,6 +202,11 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 211849c4d16661f4d8c5bfe6720cd056, type: 3}
+--- !u!4 &21882145 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4993460004146114, guid: 5c7b38e0d1361a54f887335fb7d78874,
+    type: 2}
+  m_PrefabInternal: {fileID: 784176147}
 --- !u!1 &46162592 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1088822987086788, guid: f90aec31cb9200c4aad4140f3dd017a8,
@@ -3484,15 +3489,14 @@ MonoBehaviour:
   playerCam: {fileID: 380655560}
   character: {fileID: 1947746889}
   centerPoint: {fileID: 2087318929}
-  mouseX: 30
-  mouseY: 55
-  mouseSensitivity: 10
-  mouseYPosition: 1
   zoom: -10
   zoomSpeed: 2
   zoomMin: -2
-  zoomMax: -10
+  zoomMax: -20
   rotationSpeed: 5
+  posX: 45
+  posY: 45
+  posYPosition: 1
 --- !u!81 &380655556
 AudioListener:
   m_ObjectHideFlags: 0
@@ -6902,15 +6906,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4572206131058392, guid: 5c7b38e0d1361a54f887335fb7d78874, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.05
+      value: 9.2245
       objectReference: {fileID: 0}
     - target: {fileID: 4572206131058392, guid: 5c7b38e0d1361a54f887335fb7d78874, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 8.62
+      value: 8.283
       objectReference: {fileID: 0}
     - target: {fileID: 4572206131058392, guid: 5c7b38e0d1361a54f887335fb7d78874, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 24.04
+      value: 24.284714
       objectReference: {fileID: 0}
     - target: {fileID: 4572206131058392, guid: 5c7b38e0d1361a54f887335fb7d78874, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6918,7 +6922,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4572206131058392, guid: 5c7b38e0d1361a54f887335fb7d78874, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.8722
       objectReference: {fileID: 0}
     - target: {fileID: 4572206131058392, guid: 5c7b38e0d1361a54f887335fb7d78874, type: 2}
       propertyPath: m_LocalRotation.z
@@ -6926,13 +6930,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4572206131058392, guid: 5c7b38e0d1361a54f887335fb7d78874, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.4891495
       objectReference: {fileID: 0}
     - target: {fileID: 4572206131058392, guid: 5c7b38e0d1361a54f887335fb7d78874, type: 2}
       propertyPath: m_RootOrder
       value: 23
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114640616714527840, guid: 5c7b38e0d1361a54f887335fb7d78874,
+        type: 2}
+      propertyPath: maxHealth
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572206131058392, guid: 5c7b38e0d1361a54f887335fb7d78874, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -121.43101
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114270373822980706, guid: 5c7b38e0d1361a54f887335fb7d78874, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5c7b38e0d1361a54f887335fb7d78874, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &792855993
@@ -16348,10 +16362,10 @@ RectTransform:
   m_Father: {fileID: 1761331675}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 956, y: 571}
+  m_SizeDelta: {x: 0, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1654811067
 MonoBehaviour:
@@ -21748,6 +21762,25 @@ GameObject:
   m_PrefabParentObject: {fileID: 1227832529820908, guid: 5c7b38e0d1361a54f887335fb7d78874,
     type: 2}
   m_PrefabInternal: {fileID: 784176147}
+--- !u!114 &2024027726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2024027725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3647e7d1672474e87bfdb103bcc8db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sword: {fileID: 21882145}
+  speed: 3
+  turnSpeed: 10
+  jumpDist: 5.5
+  gravity: 20
+  maxDashTime: 1
+  dashSpeed: 8
+  dashStoppingSpeed: 0.1
 --- !u!1 &2033270851 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 211849c4d16661f4d8c5bfe6720cd056, type: 3}

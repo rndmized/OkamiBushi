@@ -21,7 +21,20 @@ public class APIScoreUploader : MonoBehaviour
     {
         score.playerName = GameObject.FindGameObjectWithTag("DefaultButton").GetComponentInChildren<Text>().text;
         score.score = ScoreController.score;
-        StartCoroutine(Upload());
+        // Adding a layer of validation
+        if (GameObject.FindGameObjectWithTag("DefaultButton").GetComponentInChildren<Text>().text.Length <= 2 || GameObject.FindGameObjectWithTag("DefaultButton").GetComponentInChildren<Text>().text.Length > 15 )
+        {
+            GameObject.FindGameObjectWithTag("DefaultButton").GetComponentInChildren<Text>().text = "";
+        }
+        else
+        {
+            if(ScoreController.score != 0)
+            {
+                StartCoroutine(Upload());
+            }
+             
+        }
+        
         
     }
 

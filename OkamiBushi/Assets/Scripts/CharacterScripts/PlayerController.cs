@@ -161,15 +161,16 @@ public class PlayerController : MonoBehaviour
             input.y = 0;
         }
 
-        if (Math.Abs(Input.GetAxis("RT")) > 0)
+        if (Math.Abs(Input.GetAxis("RT")) > 0 || Input.GetKey(KeyCode.LeftShift))
         {
-            if (Input.GetButtonDown("Y"))
+            if (Input.GetButtonDown("Y") || Input.GetKey(KeyCode.E))
             {
                 anim.Play("PowerUp", 0);
+                stats.Heal(20);
                 BlockInput(1.75f);
             }
 
-            if (Input.GetButtonDown("A"))
+            if (Input.GetButtonDown("A") || Input.GetMouseButton(1))
             {
 
                 anim.Play("CircularSlash", 0);
@@ -178,7 +179,7 @@ public class PlayerController : MonoBehaviour
 
             }
 
-            if (Input.GetButtonDown("B"))
+            if (Input.GetButtonDown("B") || Input.GetKey(KeyCode.Q))
             {
                 anim.Play("Jump-Attack", 0);
                 StartCoroutine(Attack(1.1f, .6f));

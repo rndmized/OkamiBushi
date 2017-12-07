@@ -30,7 +30,19 @@ public class CharacterStats : MonoBehaviour {
         }
 
     }
-    
+
+    // Character heals an amount of damage
+    public void Heal(int hp)
+    {
+
+        // Limit to values in between 0 and max health.
+        hp = Mathf.Clamp(hp, 0, maxHealth);
+        currentHealth += hp;
+
+    }
+
+
+
     // Will be overriden
     public virtual void Die()
     {
