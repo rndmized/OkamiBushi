@@ -1,0 +1,15 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="ButtonManager">
+			<method name="NewGameButton"/>
+			<method name="ExitButton"/>
+			<method name="NewGameButton"/>
+			<method name="ReturnToMenu"/>
+			<method name="Continue"/>
+			<method name="ReturnToMenu"/>
+		</type>
+		<type fullname="APIScoreUploader">
+			<method name="UploadScore"/>
+		</type>
+	</assembly>
+</linker>

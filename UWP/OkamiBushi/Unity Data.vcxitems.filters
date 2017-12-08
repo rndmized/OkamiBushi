@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{f3601b6f-030d-44c1-a4f1-c7b8df141f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{f81b6f6d-997f-4ee5-9955-ea533adf560d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\05">
+      <UniqueIdentifier>{1727e50e-acaa-4416-8137-d4f09bb89b22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\22">
+      <UniqueIdentifier>{3476f145-701b-432d-a6fd-5503a08e4433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\26">
+      <UniqueIdentifier>{a1dafaef-4a48-4da7-b119-2be55eea0334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\2b">
+      <UniqueIdentifier>{4ae171ca-b860-4fde-a11e-53c6caa143df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\34">
+      <UniqueIdentifier>{3f86d268-3e04-415c-8860-5406d482c945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\3a">
+      <UniqueIdentifier>{fe6a95d7-6462-454a-af0c-9b4564efb659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\5d">
+      <UniqueIdentifier>{e546fe9f-76ea-4176-a720-c3e7aaca0fb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\78">
+      <UniqueIdentifier>{af43d323-05da-43ab-9bb3-7f36f2a64ea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\99">
+      <UniqueIdentifier>{cf159fc9-ddae-4541-a516-6a3499d82521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\b2">
+      <UniqueIdentifier>{bfd8ea38-1717-4b73-8450-c71f90aa1c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\bb">
+      <UniqueIdentifier>{6fb1c6af-3419-49af-844f-03843685f232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\cb">
+      <UniqueIdentifier>{71971c78-5145-49e8-bf78-675c4e65e738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\d7">
+      <UniqueIdentifier>{9269d334-c571-4ba4-9a30-1918f2354f91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2\fe">
+      <UniqueIdentifier>{71b56de7-5353-4b51-9c1e-b49e22d76fa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono">
+      <UniqueIdentifier>{4a337799-caf9-4264-9c39-28141c653736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\2.0">
+      <UniqueIdentifier>{d29d2c77-8b7d-4aca-80f7-6dca8dd3df47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\2.0\Browsers">
+      <UniqueIdentifier>{f2c53ca7-c5bb-4e66-8969-d50136fd93c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\4.0">
+      <UniqueIdentifier>{e1bd9f86-e7e7-423a-88e5-7bcf8062a6da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\4.0\Browsers">
+      <UniqueIdentifier>{2a87704b-ad24-4418-9ccf-fe9c5b82861c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\4.5">
+      <UniqueIdentifier>{3164e872-ce4c-40de-80df-fccf606a6fa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\4.5\Browsers">
+      <UniqueIdentifier>{18c2b248-c918-48d0-b1d6-dfca90447faf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc\mono\mconfig">
+      <UniqueIdentifier>{5549c139-30af-4dd7-9aa9-a535df2365b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\Metadata">
+      <UniqueIdentifier>{a2a0e237-f6e4-4028-a933-9e12714bc853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\Resources">
+      <UniqueIdentifier>{bb268edc-ea30-466b-8504-ae54ed77865f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Resources">
+      <UniqueIdentifier>{b651bfcd-78aa-446f-982e-c8f094f4261c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI\level2">
+      <UniqueIdentifier>{bb1416f3-3e84-409b-80fe-16a396142723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\GI">
+      <UniqueIdentifier>{83461f2a-ad67-43c5-9e7e-c2f7eef5eb5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data\etc">
+      <UniqueIdentifier>{b77d9156-8c92-4baf-ae7d-d16d52259091}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\il2cpp_data">
+      <UniqueIdentifier>{b8528dc4-d7dd-42b4-8297-80d92dd2a8b3}</UniqueIdentifier>
+    </Filter>
+    <Resource Include="$(MSBuildThisFileDirectory)Resource.res" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)UnityGenerated.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UnityGenerated.h" />
+    <None Include="$(MSBuildThisFileDirectory)Assets\Square150x150Logo.scale-100.jpg">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Assets\Square150x150Logo.scale-200.jpg">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Assets\Square44x44Logo.scale-200.jpg">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Assets\Square44x44Logo.targetsize-24_altform-unplated.jpg">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Assets\Wide310x150Logo.scale-200.jpg">
+      <Filter>Assets</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\boot.config">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\globalgamemanagers">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\globalgamemanagers.assets">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\globalgamemanagers.assets.resS">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\level0">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\level0.resS">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\level1">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\level1.resS">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\level2">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\level2.resS">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\level3">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\level3.resS">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\methods_pointedto_by_uievents.xml">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\preserved_derived_types.xml">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\resources.assets">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\resources.assets.resS">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets0.assets">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets0.assets.resS">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets1.assets">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets1.assets.resS">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets2.assets">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets2.assets.resS">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets3.assets">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\sharedassets3.assets.resS">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\UnityEngine.xml">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\05\05c5ab816b2951dbe2f917996c98f902.caw">
+      <Filter>Data\GI\level2\05</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\05\05c5ab816b2951dbe2f917996c98f902.ecm">
+      <Filter>Data\GI\level2\05</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\05\05c5ab816b2951dbe2f917996c98f902.iws.sse">
+      <Filter>Data\GI\level2\05</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\05\05c5ab816b2951dbe2f917996c98f902.rgb">
+      <Filter>Data\GI\level2\05</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\05\05c5ab816b2951dbe2f917996c98f902.rsc.sse">
+      <Filter>Data\GI\level2\05</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\05\05c5ab816b2951dbe2f917996c98f902.vis">
+      <Filter>Data\GI\level2\05</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\22\2295a47a1a2c91021e2b806409cc6e25.caw">
+      <Filter>Data\GI\level2\22</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\22\2295a47a1a2c91021e2b806409cc6e25.ecm">
+      <Filter>Data\GI\level2\22</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\22\2295a47a1a2c91021e2b806409cc6e25.iws.sse">
+      <Filter>Data\GI\level2\22</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\22\2295a47a1a2c91021e2b806409cc6e25.rgb">
+      <Filter>Data\GI\level2\22</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\22\2295a47a1a2c91021e2b806409cc6e25.rsc.sse">
+      <Filter>Data\GI\level2\22</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\22\2295a47a1a2c91021e2b806409cc6e25.vis">
+      <Filter>Data\GI\level2\22</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\26\268f6bf364f632b58fe1ec57915a6e78.caw">
+      <Filter>Data\GI\level2\26</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\26\268f6bf364f632b58fe1ec57915a6e78.ecm">
+      <Filter>Data\GI\level2\26</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\26\268f6bf364f632b58fe1ec57915a6e78.iws.sse">
+      <Filter>Data\GI\level2\26</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\26\268f6bf364f632b58fe1ec57915a6e78.rgb">
+      <Filter>Data\GI\level2\26</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\26\268f6bf364f632b58fe1ec57915a6e78.rsc.sse">
+      <Filter>Data\GI\level2\26</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\26\268f6bf364f632b58fe1ec57915a6e78.vis">
+      <Filter>Data\GI\level2\26</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\2b\2b963afaa6ebb5c190c0791d916f3448.caw">
+      <Filter>Data\GI\level2\2b</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\2b\2b963afaa6ebb5c190c0791d916f3448.ecm">
+      <Filter>Data\GI\level2\2b</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\2b\2b963afaa6ebb5c190c0791d916f3448.iws.sse">
+      <Filter>Data\GI\level2\2b</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\2b\2b963afaa6ebb5c190c0791d916f3448.rgb">
+      <Filter>Data\GI\level2\2b</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\2b\2b963afaa6ebb5c190c0791d916f3448.rsc.sse">
+      <Filter>Data\GI\level2\2b</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\2b\2b963afaa6ebb5c190c0791d916f3448.vis">
+      <Filter>Data\GI\level2\2b</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\34\34d0350a15521bfa31f5f1f6495fb47b.caw">
+      <Filter>Data\GI\level2\34</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\34\34d0350a15521bfa31f5f1f6495fb47b.ecm">
+      <Filter>Data\GI\level2\34</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\34\34d0350a15521bfa31f5f1f6495fb47b.iws.sse">
+      <Filter>Data\GI\level2\34</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\34\34d0350a15521bfa31f5f1f6495fb47b.rgb">
+      <Filter>Data\GI\level2\34</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\34\34d0350a15521bfa31f5f1f6495fb47b.rsc.sse">
+      <Filter>Data\GI\level2\34</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\34\34d0350a15521bfa31f5f1f6495fb47b.vis">
+      <Filter>Data\GI\level2\34</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\3a\3a24b418fe70b8680f36b6a95ab057ac.caw">
+      <Filter>Data\GI\level2\3a</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\3a\3a24b418fe70b8680f36b6a95ab057ac.ecm">
+      <Filter>Data\GI\level2\3a</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\3a\3a24b418fe70b8680f36b6a95ab057ac.iws.sse">
+      <Filter>Data\GI\level2\3a</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\3a\3a24b418fe70b8680f36b6a95ab057ac.rgb">
+      <Filter>Data\GI\level2\3a</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\3a\3a24b418fe70b8680f36b6a95ab057ac.rsc.sse">
+      <Filter>Data\GI\level2\3a</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\3a\3a24b418fe70b8680f36b6a95ab057ac.vis">
+      <Filter>Data\GI\level2\3a</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\5d\5d21dd56fe6efe93ec1df6f7cb698f4d.caw">
+      <Filter>Data\GI\level2\5d</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\5d\5d21dd56fe6efe93ec1df6f7cb698f4d.ecm">
+      <Filter>Data\GI\level2\5d</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\5d\5d21dd56fe6efe93ec1df6f7cb698f4d.iws.sse">
+      <Filter>Data\GI\level2\5d</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\5d\5d21dd56fe6efe93ec1df6f7cb698f4d.rgb">
+      <Filter>Data\GI\level2\5d</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\5d\5d21dd56fe6efe93ec1df6f7cb698f4d.rsc.sse">
+      <Filter>Data\GI\level2\5d</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\5d\5d21dd56fe6efe93ec1df6f7cb698f4d.vis">
+      <Filter>Data\GI\level2\5d</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\78\78ab2c10a20fb44440890e9d083ebc8f.caw">
+      <Filter>Data\GI\level2\78</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\78\78ab2c10a20fb44440890e9d083ebc8f.ecm">
+      <Filter>Data\GI\level2\78</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\78\78ab2c10a20fb44440890e9d083ebc8f.iws.sse">
+      <Filter>Data\GI\level2\78</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\78\78ab2c10a20fb44440890e9d083ebc8f.rgb">
+      <Filter>Data\GI\level2\78</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\78\78ab2c10a20fb44440890e9d083ebc8f.rsc.sse">
+      <Filter>Data\GI\level2\78</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\78\78ab2c10a20fb44440890e9d083ebc8f.vis">
+      <Filter>Data\GI\level2\78</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\99\9925a3de666829caabfa314fc9ccdded.caw">
+      <Filter>Data\GI\level2\99</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\99\9925a3de666829caabfa314fc9ccdded.ecm">
+      <Filter>Data\GI\level2\99</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\99\9925a3de666829caabfa314fc9ccdded.iws.sse">
+      <Filter>Data\GI\level2\99</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\99\9925a3de666829caabfa314fc9ccdded.rgb">
+      <Filter>Data\GI\level2\99</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\99\9925a3de666829caabfa314fc9ccdded.rsc.sse">
+      <Filter>Data\GI\level2\99</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\99\9925a3de666829caabfa314fc9ccdded.vis">
+      <Filter>Data\GI\level2\99</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\b2\b25375459a14f62f1d95f2de4d0211e1.caw">
+      <Filter>Data\GI\level2\b2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\b2\b25375459a14f62f1d95f2de4d0211e1.ecm">
+      <Filter>Data\GI\level2\b2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\b2\b25375459a14f62f1d95f2de4d0211e1.iws.sse">
+      <Filter>Data\GI\level2\b2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\b2\b25375459a14f62f1d95f2de4d0211e1.rgb">
+      <Filter>Data\GI\level2\b2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\b2\b25375459a14f62f1d95f2de4d0211e1.rsc.sse">
+      <Filter>Data\GI\level2\b2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\b2\b25375459a14f62f1d95f2de4d0211e1.vis">
+      <Filter>Data\GI\level2\b2</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\bb\bb14d5c6343a3b77540218c9ee3ada63.caw">
+      <Filter>Data\GI\level2\bb</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\bb\bb14d5c6343a3b77540218c9ee3ada63.ecm">
+      <Filter>Data\GI\level2\bb</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\bb\bb14d5c6343a3b77540218c9ee3ada63.iws.sse">
+      <Filter>Data\GI\level2\bb</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\bb\bb14d5c6343a3b77540218c9ee3ada63.rgb">
+      <Filter>Data\GI\level2\bb</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\bb\bb14d5c6343a3b77540218c9ee3ada63.rsc.sse">
+      <Filter>Data\GI\level2\bb</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\bb\bb14d5c6343a3b77540218c9ee3ada63.vis">
+      <Filter>Data\GI\level2\bb</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\cb\cbddd7de0d391e4526e17cdc66fea50e.caw">
+      <Filter>Data\GI\level2\cb</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\cb\cbddd7de0d391e4526e17cdc66fea50e.ecm">
+      <Filter>Data\GI\level2\cb</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\cb\cbddd7de0d391e4526e17cdc66fea50e.iws.sse">
+      <Filter>Data\GI\level2\cb</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\cb\cbddd7de0d391e4526e17cdc66fea50e.rgb">
+      <Filter>Data\GI\level2\cb</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\cb\cbddd7de0d391e4526e17cdc66fea50e.rsc.sse">
+      <Filter>Data\GI\level2\cb</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\cb\cbddd7de0d391e4526e17cdc66fea50e.vis">
+      <Filter>Data\GI\level2\cb</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\d7\d749f80d82dcfb30caf1f4b99f33dcf6.caw">
+      <Filter>Data\GI\level2\d7</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\d7\d749f80d82dcfb30caf1f4b99f33dcf6.ecm">
+      <Filter>Data\GI\level2\d7</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\d7\d749f80d82dcfb30caf1f4b99f33dcf6.iws.sse">
+      <Filter>Data\GI\level2\d7</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\d7\d749f80d82dcfb30caf1f4b99f33dcf6.rgb">
+      <Filter>Data\GI\level2\d7</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\d7\d749f80d82dcfb30caf1f4b99f33dcf6.rsc.sse">
+      <Filter>Data\GI\level2\d7</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\d7\d749f80d82dcfb30caf1f4b99f33dcf6.vis">
+      <Filter>Data\GI\level2\d7</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\fe\fe2f91888db16ff1109b3b2f28ba5db9.caw">
+      <Filter>Data\GI\level2\fe</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\fe\fe2f91888db16ff1109b3b2f28ba5db9.ecm">
+      <Filter>Data\GI\level2\fe</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\fe\fe2f91888db16ff1109b3b2f28ba5db9.iws.sse">
+      <Filter>Data\GI\level2\fe</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\fe\fe2f91888db16ff1109b3b2f28ba5db9.rgb">
+      <Filter>Data\GI\level2\fe</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\fe\fe2f91888db16ff1109b3b2f28ba5db9.rsc.sse">
+      <Filter>Data\GI\level2\fe</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\GI\level2\fe\fe2f91888db16ff1109b3b2f28ba5db9.vis">
+      <Filter>Data\GI\level2\fe</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\browscap.ini">
+      <Filter>Data\il2cpp_data\etc\mono</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\config">
+      <Filter>Data\il2cpp_data\etc\mono</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\2.0\DefaultWsdlHelpGenerator.aspx">
+      <Filter>Data\il2cpp_data\etc\mono\2.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\2.0\machine.config">
+      <Filter>Data\il2cpp_data\etc\mono\2.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\2.0\settings.map">
+      <Filter>Data\il2cpp_data\etc\mono\2.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\2.0\web.config">
+      <Filter>Data\il2cpp_data\etc\mono\2.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\2.0\Browsers\Compat.browser">
+      <Filter>Data\il2cpp_data\etc\mono\2.0\Browsers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.0\DefaultWsdlHelpGenerator.aspx">
+      <Filter>Data\il2cpp_data\etc\mono\4.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.0\machine.config">
+      <Filter>Data\il2cpp_data\etc\mono\4.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.0\settings.map">
+      <Filter>Data\il2cpp_data\etc\mono\4.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.0\web.config">
+      <Filter>Data\il2cpp_data\etc\mono\4.0</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.0\Browsers\Compat.browser">
+      <Filter>Data\il2cpp_data\etc\mono\4.0\Browsers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.5\DefaultWsdlHelpGenerator.aspx">
+      <Filter>Data\il2cpp_data\etc\mono\4.5</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.5\machine.config">
+      <Filter>Data\il2cpp_data\etc\mono\4.5</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.5\settings.map">
+      <Filter>Data\il2cpp_data\etc\mono\4.5</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.5\web.config">
+      <Filter>Data\il2cpp_data\etc\mono\4.5</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\4.5\Browsers\Compat.browser">
+      <Filter>Data\il2cpp_data\etc\mono\4.5\Browsers</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\etc\mono\mconfig\config.xml">
+      <Filter>Data\il2cpp_data\etc\mono\mconfig</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\Metadata\global-metadata.dat">
+      <Filter>Data\il2cpp_data\Metadata</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\Resources\I18N.CJK.dll-resources.dat">
+      <Filter>Data\il2cpp_data\Resources</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\Resources\mscorlib.dll-resources.dat">
+      <Filter>Data\il2cpp_data\Resources</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\il2cpp_data\Resources\System.dll-resources.dat">
+      <Filter>Data\il2cpp_data\Resources</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\Resources\unity default resources">
+      <Filter>Data\Resources</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Data\Resources\unity_builtin_extra">
+      <Filter>Data\Resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>
