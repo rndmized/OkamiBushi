@@ -6,7 +6,7 @@ Unity Project (UWP) for Mobile Application Development III Module (4th Year, Bsc
 
 ## Download It Here!
 
-* **Latest Build**: [Alpha-1.0]()
+* **Latest Build**: [Alpha-1.0](https://tinyurl.com/yaeh24yn)
 
 Previous builds (Development tests):
 
@@ -61,6 +61,7 @@ Scores and users are stored in a simple SQL database through the server.
 The following is how this repository is structured:
 
 * **OkamiBushi**: Contains the Unity Project.
+    * **Assets**: Contains scripts, Animation controllers, game sceenes and Graphics and models.
 * **UWP**:  Contains the UWP project compiled by Unity.
 
 
@@ -96,4 +97,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 * Pro Builder Basic to build mesh-able structures: https://www.assetstore.unity3d.com/en/#!/content/11919
 * Toon Fantasy Sword for player's sword: https://www.assetstore.unity3d.com/en/#!/content/65573
 * Score Screen Frame: https://scottpurdy.deviantart.com/art/Border-Art-02-338569070
+* Background image: https://opengameart.org/content/environment
 
